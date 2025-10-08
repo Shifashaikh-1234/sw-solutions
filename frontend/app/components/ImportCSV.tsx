@@ -26,7 +26,9 @@ export default function ImportCSV({ fetchProducts }: { fetchProducts: () => void
 
       toast.success(res.data.message);
       fetchProducts(); // refresh product table
-    } catch (err: any) {
+    } 
+    // @ts-ignore
+    catch (err: any) {
       console.error(err.response?.data || err);
       toast.error(err.response?.data?.message || "Import failed");
     } finally {

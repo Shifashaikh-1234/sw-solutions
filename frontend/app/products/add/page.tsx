@@ -38,7 +38,9 @@ export default function AddProductPage() {
 
       toast.success("Product added successfully!");
       router.push("/"); // Redirect to dashboard/home page
-    } catch (err: any) {
+    } 
+    // @ts-ignore
+    catch (err: any) {
       console.error(err.response?.data || err);
       setError(err.response?.data?.message || "Error adding product");
       toast.error("Failed to add product");

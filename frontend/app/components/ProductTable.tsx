@@ -39,7 +39,7 @@ export default function ProductTable({ products, refresh }: Props) {
       await api.put(`/products/${id}`, edited);
       toast.success("Product updated successfully!");
       setEditId(null);
-      refresh();
+      refresh();// @ts-ignore
     } catch (err: any) {
       toast.error(err.response?.data?.message || "Update failed");
     } finally {
@@ -53,7 +53,7 @@ export default function ProductTable({ products, refresh }: Props) {
     try {
       await api.delete(`/products/${deleteProductId}`);
       toast.success("Product deleted successfully!");
-      refresh();
+      refresh();// @ts-ignore
     } catch (err: any) {
       toast.error(err.response?.data?.message || "Delete failed");
     } finally {

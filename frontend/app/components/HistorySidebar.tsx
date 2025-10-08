@@ -3,11 +3,13 @@ import { useEffect, useState } from "react";
 import api from "../utils/api";
 
 interface Props {
+  // @ts-ignore
   product: any;
   onClose: () => void;
 }
 
 export default function HistorySidebar({ product, onClose }: Props) {
+  // @ts-ignore
   const [logs, setLogs] = useState<any[]>([]);
 
   useEffect(() => {

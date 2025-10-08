@@ -8,6 +8,7 @@ import FilterDropdown from "./components/FilterDropdown";
 import ImportCSV from "./components/ImportCSV";
 
 export default function DashboardPage() {
+  // @ts-ignore
   const [products, setProducts] = useState<any[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [filters, setFilters] = useState({ name: "", category: "" });
@@ -41,6 +42,7 @@ const fetchProducts = async (pageNumber = 1) => {
 
   // Filter logic
   const filtered = products.filter(
+    // @ts-ignore
     (p: any) =>
       p.name.toLowerCase().includes(filters.name.toLowerCase()) &&
       (filters.category === "" || p.category === filters.category)

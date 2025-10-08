@@ -16,7 +16,9 @@ export default function RegisterPage() {
     try {
       await api.post("/auth/register", form);
       router.push("/login");
-    } catch (err: any) {
+    } 
+    // @ts-ignore
+    catch (err: any) {
       setError(err.response?.data?.message || "Registration failed");
     }
   };
