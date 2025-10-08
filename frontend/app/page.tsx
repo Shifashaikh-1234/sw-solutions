@@ -7,6 +7,7 @@ import SearchBar from "./components/SearchBar";
 import FilterDropdown from "./components/FilterDropdown";
 import ImportCSV from "./components/ImportCSV";
 
+
 export default function DashboardPage() {
   // @ts-ignore
   const [products, setProducts] = useState<any[]>([]);
