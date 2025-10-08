@@ -1,0 +1,11 @@
+name,unit,category,brand,stock,status,image
+Orange,Kg,Fruit,FreshFarms,80,Available,orange.png
+Spinach,Kg,Vegetables,GreenLeaf,60,Available,spinach.png
+Butter,Kg,Dairy,DairyPure,40,Available,butter.png
+Rice,Kg,Grains,RiceMaster,200,Available,rice.png
+Notebook,Piece,Stationery,PaperPro,150,Available,notebook.png
+Pen,Piece,Stationery,WriteWell,300,Available,pen.png
+Shampoo,Bottle,Personal Care,HeadCare,70,Available,shampoo.png
+T-shirt,Piece,Clothing,FashionHub,50,Available,tshirt.png
+Laptop,Piece,Electronics,TechBrand,20,Available,laptop.png
+Coffee,Pack,Beverages,ChillBrew,100,Available,coffee.png
